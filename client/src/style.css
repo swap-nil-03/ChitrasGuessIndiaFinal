@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+:root{font-family:'DM Sans',system-ui,sans-serif;color:#211d32;background:#f6f4fb;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;min-width:320px}.app{min-height:100vh;background:radial-gradient(circle at 12% 15%,#fff4e7 0,transparent 27%),radial-gradient(circle at 88% 20%,#ece9ff 0,transparent 30%),#f7f6fb}
+.topbar{height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eae7f1;background:#ffffffc9;backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:11px;font:700 20px Outfit}.brand b{color:#7653dc}.brandmark{background:#7653dc;color:white;border-radius:12px;padding:8px;font-size:15px}.topright{display:flex;gap:18px;align-items:center;font-size:12px}.online{color:#168b5d}.offline{color:#d45b54}.topright select{border:1px solid #e4dfed;border-radius:9px;padding:8px;background:white;color:#29243b}
+.landing{max-width:1180px;margin:55px auto 80px;padding:0 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}.hero{padding:30px 0}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;color:#805fd8}.hero h1{font:800 clamp(46px,6vw,76px)/1.02 Outfit;margin:20px 0;color:#211c35;letter-spacing:-3px}.hero h1 em{font-style:normal;color:#7957db}.hero p{max-width:470px;color:#777187;line-height:1.8;font-size:16px}.hero-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}.hero-tags span{background:white;border:1px solid #ece8f4;padding:10px 13px;border-radius:30px;font-size:12px;font-weight:700}
+.join-card,.panel{background:white;border:1px solid #ebe7f3;border-radius:20px;box-shadow:0 18px 55px #31205a0b}.join-card{padding:28px}.join-card label{display:block;font-size:12px;font-weight:800;margin:13px 0 8px}.join-card input,.join-row input,.chat-form input{width:100%;border:1px solid #e5e1ed;background:#fbfaff;padding:13px;border-radius:10px;font:inherit;outline:none}.join-card input:focus,.join-row input:focus,.chat-form input:focus{border-color:#9278e5}.category-grid{display:flex;gap:7px;flex-wrap:wrap}.cat{border:1px solid #e8e3f1;border-radius:20px;background:white;padding:8px 10px;font-size:10px;color:#625c70;cursor:pointer}.cat.active{background:#f0ebff;border-color:#a995ec;color:#6545c5}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:20px}.primary,.secondary,.leave,.copy{border:0;border-radius:10px;padding:12px 15px;font-weight:800;cursor:pointer}.primary{background:#7655d7;color:white;box-shadow:0 5px 14px #7655d733}.primary:disabled{opacity:.4;cursor:not-allowed}.secondary{background:#f0ecf8;color:#584b75}.join-row{display:flex;gap:8px;margin-top:12px}.join-row input{min-width:0}.fineprint,.muted{font-size:11px;color:#9690a3;text-align:center;margin:17px 0 0}.error{color:#c33;font-size:12px}
+.game{max-width:1500px;margin:24px auto;padding:0 20px}.game-head{display:flex;align-items:center;justify-content:space-between;background:white;border:1px solid #ebe7f3;border-radius:14px;padding:13px 17px;margin-bottom:15px}.game-head>div:first-child{display:flex;align-items:center;gap:10px}.pill{background:#f0ebff;color:#704fd0;border-radius:20px;padding:6px 9px;font-size:10px;font-weight:800}.game-head strong{font-size:13px}.copy{padding:7px 10px;background:#f5f2fa;font-size:10px}.round-meta{font-size:12px;color:#777}.round-meta b{color:#7655d7;font-size:16px;margin-left:5px}.leave{background:#fff0ee;color:#c05b50;padding:9px 12px;font-size:11px}.game-layout{display:grid;grid-template-columns:205px minmax(300px,1fr) 270px;gap:14px;align-items:stretch}.panel{padding:15px;min-height:500px}.panel h3{font:700 14px Outfit;margin:0 0 16px;display:flex;justify-content:space-between}.panel h3 span{color:#9c95aa;font:600 11px 'DM Sans'}.player{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #f1eef5;font-size:11px}.avatar{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#f3effb;font-size:17px}.player-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.player b{font-size:12px;color:#7151ce}.full{width:100%;margin-top:18px}.board-column{min-width:0;position:relative}.wordbar{height:54px;background:white;border:1px solid #ebe7f3;border-radius:13px 13px 0 0;display:flex;align-items:center;justify-content:space-between;padding:0 17px}.wordbar span{font-size:11px;color:#8b849b}.wordbar strong{font-size:14px}.wordbar small{font-size:10px;color:#8b849b}.canvas{width:100%;height:auto;aspect-ratio:5/3;display:block;background:white;border-left:1px solid #ebe7f3;border-right:1px solid #ebe7f3;touch-action:none;cursor:crosshair}.tools{height:55px;background:white;border:1px solid #ebe7f3;border-radius:0 0 13px 13px;display:flex;gap:8px;align-items:center;justify-content:center;padding:8px}.tools button{border:1px solid #e9e5ef;background:#faf9fc;border-radius:7px;padding:7px 9px;font-size:10px;cursor:pointer}.tools button:disabled{opacity:.4}.swatch{width:22px;height:22px!important;padding:0!important;border-radius:50%!important}.swatch.dark{background:#201a36}.swatch.red{background:#e64d4d}.swatch.blue{background:#2376d2}.swatch.green{background:#1c9b65}.tools input{width:75px}.messages{height:390px;overflow:auto;display:flex;flex-direction:column;gap:9px}.msg{font-size:11px;line-height:1.45;padding:8px 9px;border-radius:9px;background:#f7f5fa;overflow-wrap:anywhere}.msg.correct{background:#e9f8ef;color:#187a4b;font-weight:800}.msg.system{background:#f0ebff;color:#6748bf}.chat-form{display:flex;gap:6px;margin-top:12px}.chat-form input{min-width:0;padding:10px;font-size:11px}.chat-form button{padding:10px;font-size:10px}.word-choices{position:absolute;z-index:2;top:65px;left:0;right:0;display:flex;justify-content:center;gap:10px;padding:10px}.word-choices button{background:#7655d7;color:white;border:0;border-radius:9px;padding:12px 18px;font-weight:800;box-shadow:0 5px 15px #0002}.finish{margin:18px 0;padding:24px;text-align:center;background:white;border:1px solid #ebe7f3;border-radius:16px}.finish h2{font-family:Outfit}.toast{position:fixed;top:90px;left:50%;transform:translateX(-50%);background:#211d32;color:white;border-radius:30px;padding:12px 20px;box-shadow:0 5px 25px #0003;font-size:13px;z-index:9}footer{padding:20px 5vw;color:#9992a8;font-size:11px;display:flex;justify-content:space-between}
+@media(max-width:950px){.landing{grid-template-columns:1fr;gap:20px;margin-top:20px}.hero{padding:10px 0}.hero h1{font-size:54px}.game-layout{grid-template-columns:180px minmax(0,1fr)}.chat{grid-column:1/-1;min-height:250px}.messages{height:170px}.players{min-height:300px}}
+@media(max-width:620px){.topbar{padding:0 15px;height:64px}.brand{font-size:16px}.topright{gap:8px}.landing{padding:0 14px;margin:25px auto 40px}.hero h1{font-size:48px}.join-card{padding:19px}.game{padding:0 8px}.game-head{flex-wrap:wrap;gap:10px}.round-meta{order:3;width:100%}.game-layout{grid-template-columns:1fr}.players{min-height:auto}.players .player{display:inline-flex;width:49%;padding:6px}.board-column{grid-row:1}.canvas{aspect-ratio:1.15}.tools{gap:4px;justify-content:space-around}.tools button{font-size:9px;padding:6px}.chat{grid-column:auto;min-height:270px}.messages{height:180px}footer{padding:15px;gap:10px;flex-wrap:wrap}}
+
+/* ChitraGuess India usability update: share controls, stable mobile board and guess dock. */
+.room-actions{display:flex;align-items:center;gap:8px;min-width:0;flex-wrap:wrap}
+.copy.share{background:#eee9ff;color:#5e43b7}
+.mobile-guess-dock{display:none}
+.messages{overscroll-behavior:contain;scrollbar-width:thin}
+.wordbar{gap:10px;min-width:0}
+.wordbar strong{overflow-wrap:anywhere;text-align:center}
+.wordbar small{white-space:nowrap}
+
+@media(max-width:620px){
+  body{min-height:100%;overscroll-behavior-y:contain}
+  .app{min-height:100dvh;padding-bottom:env(safe-area-inset-bottom)}
+  .topbar{height:56px;min-height:56px}
+  .topright{font-size:10px}
+  .game{margin:8px auto 0;padding:0 7px 92px}
+  .game-head{padding:8px 9px;gap:7px;margin-bottom:8px;border-radius:11px}
+  .room-actions{gap:5px;flex:1 1 100%}
+  .game-head strong{font-size:11px}
+  .pill{font-size:9px;padding:5px 7px}
+  .copy{font-size:9px;padding:6px 8px}
+  .round-meta{order:0;width:auto;flex:1;font-size:10px}
+  .round-meta b{font-size:13px}
+  .leave{font-size:9px;padding:7px 9px}
+  .game-layout{display:flex;flex-direction:column;gap:8px}
+  .players{order:3;min-height:0;padding:9px 11px}
+  .players h3{margin-bottom:5px}
+  .players .player{width:49%;padding:4px 2px;font-size:10px}
+  .board-column{order:1;width:100%}
+  .wordbar{height:auto;min-height:42px;padding:7px 9px;flex-wrap:wrap;justify-content:space-between;border-radius:10px 10px 0 0}
+  .wordbar span{font-size:9px}
+  .wordbar strong{font-size:12px;flex:1;min-width:100px}
+  .wordbar small{font-size:9px;width:100%;text-align:center}
+  .canvas{width:100%;height:auto;aspect-ratio:1.28;max-height:40dvh;min-height:205px;object-fit:contain;touch-action:none}
+  .tools{height:43px;padding:5px;gap:5px;justify-content:space-between}
+  .tools button{font-size:9px;padding:5px 7px}
+  .tools .swatch{width:19px;height:19px!important;min-width:19px}
+  .tools input{width:55px}
+  .chat{order:2;min-height:0;padding:9px 10px 8px}
+  .chat h3{margin:0 0 6px;font-size:12px}
+  .messages{height:94px;min-height:94px;max-height:94px;overflow-y:auto;gap:5px}
+  .msg{font-size:10px;padding:5px 7px}
+  .desktop-guess-form{display:none}
+  .mobile-guess-dock{display:flex;position:fixed;z-index:30;left:0;right:0;bottom:0;gap:7px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid #e7e1f0;box-shadow:0 -5px 20px #25174418}
+  .mobile-guess-dock input{flex:1;min-width:0;border:1px solid #ded8ea;background:#fbfaff;border-radius:10px;padding:12px;font:inherit;font-size:13px}
+  .mobile-guess-dock button{padding:10px 15px;min-width:68px}
+  .mobile-guess-dock button:disabled{opacity:.45}
+  .word-choices{position:relative;top:auto;left:auto;right:auto;flex-wrap:wrap;padding:7px;background:#fff}
+  .word-choices button{font-size:11px;padding:9px 12px}
+  .finish{margin:10px 0;padding:14px}
+  footer{display:none}
+}
+
+/* In landscape, keep the drawing and live chat side-by-side on a phone. */
+@media(max-width:900px) and (orientation:landscape){
+  .game{padding-bottom:8px}
+  .game-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,30%);grid-template-areas:"board chat" "players chat";gap:8px;align-items:start}
+  .board-column{grid-area:board}
+  .chat{grid-area:chat;min-height:0;height:calc(100dvh - 125px);padding:9px}
+  .messages{height:calc(100dvh - 230px);max-height:calc(100dvh - 230px);min-height:70px}
+  .players{grid-area:players;min-height:0;padding:6px}
+  .players .player{width:24%;padding:3px}
+  .canvas{height:calc(100dvh - 190px);max-height:380px;min-height:150px;aspect-ratio:auto}
+  .mobile-guess-dock{display:none}
+  .desktop-guess-form{display:flex}
+  .game-head{padding:6px 9px;margin-bottom:7px}
+  .wordbar{height:38px}
+  .tools{height:38px}
+}
+
+/* v3: fixed, immediately visible end-of-game results and top-anchored chat. */
+.result-backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:18px;background:rgba(20,15,34,.72);backdrop-filter:blur(5px)}
+.result-modal{width:min(100%,460px);max-height:min(88dvh,720px);overflow:auto;background:#fff;border:1px solid #ece7f4;border-radius:22px;padding:24px;box-shadow:0 24px 90px #100b2055;text-align:center}
+.result-trophy{font-size:48px;line-height:1.2}.result-modal h2{font:800 28px Outfit;margin:8px 0;color:#211c35}.result-subtitle{color:#898297;font-size:12px;margin:0 0 14px}.result-list{list-style:none;padding:0;margin:0 0 18px;text-align:left}.result-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;border-bottom:1px solid #f0edf5;font-size:13px}.result-list li:first-child{background:#f5f0ff;border-radius:10px;font-weight:800}.result-list strong{white-space:nowrap;color:#704fd0}.result-actions{display:flex;gap:10px;justify-content:center}.result-actions button{min-width:120px}.result-wait{font-size:11px;color:#898297;margin:14px 0 0}
+.messages{flex-direction:column;justify-content:flex-start}
+@media(max-width:620px){.result-modal{padding:19px 15px;border-radius:18px}.result-modal h2{font-size:24px}.result-list li{padding:9px;font-size:12px}.result-actions{position:sticky;bottom:0;background:#fff;padding-top:8px}.result-actions button{flex:1}.messages{height:120px;min-height:120px;max-height:120px}}
+
+
+/* v4: show live chat immediately on portrait phones and keep result actions visible. */
+@media(max-width:620px) and (orientation:portrait){
+  .game-layout .chat{order:0;width:100%;}
+  .game-layout .board-column{order:1;}
+  .game-layout .players{order:2;}
+  .chat{min-height:0;}
+  .messages{height:105px;min-height:105px;max-height:105px;overflow-y:auto;scroll-behavior:auto;}
+  .result-backdrop{padding:10px;align-items:center;}
+  .result-modal{width:min(100%,440px);max-height:calc(100dvh - 20px);overflow-y:auto;padding-bottom:calc(16px + env(safe-area-inset-bottom));}
+  .result-actions{position:sticky;bottom:0;padding:10px 0 2px;background:#fff;}
+}
+
+/* v5 requested gameplay improvements */
+.round-select-label{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;font-weight:700;margin-top:12px}
+.round-select-label select,.mobile-start-bar select{border:1px solid #e5e1ed;border-radius:8px;padding:7px;background:#fff;font:inherit}
+.mobile-start-bar{display:none}
+.tools button:disabled{opacity:.35}
+@media(max-width:620px){
+  .mobile-start-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #ebe7f3;border-radius:12px;padding:10px;margin:0 0 9px}
+  .mobile-start-bar label{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:800}
+  .mobile-start-bar button{flex:1;padding:11px}
+  .players .desktop-start-controls{display:none}
+}
+
+
+/* v5.2: celebratory correct-guess feedback and accessible result layout */
+.msg.correct{animation:correct-pop .55s ease-out;border:1px solid #b8ebc8;background:linear-gradient(110deg,#e7ffef,#f5fff8);color:#176b38;font-weight:800;box-shadow:0 4px 16px #26a65b20}
+@keyframes correct-pop{0%{transform:scale(.94);opacity:.5}55%{transform:scale(1.035)}100%{transform:scale(1);opacity:1}}
+.toast{animation:toast-enter .25s ease-out}
+@keyframes toast-enter{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
+.result-list li{animation:result-row-in .3s ease both}
+.result-list li:nth-child(2){animation-delay:.04s}.result-list li:nth-child(3){animation-delay:.08s}.result-list li:nth-child(4){animation-delay:.12s}
+@keyframes result-row-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+.voice-panel{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0;padding:12px 14px;background:#fff;border:1px solid #e8e3f2;border-radius:14px;box-shadow:0 4px 14px rgba(32,26,54,.05)}
+.voice-panel strong{margin-right:auto;color:#201a36}.voice-panel .muted{font-size:12px;color:#746d83}
+@media(max-width:700px){.voice-panel{position:relative;gap:8px;padding:10px}.voice-panel button{font-size:12px;padding:9px 11px}.voice-panel strong{width:100%;margin:0}}
+
+.voice-error { flex-basis: 100%; width: 100%; margin: 6px 0 0; padding: 10px 12px; border-radius: 8px; line-height: 1.45; overflow-wrap: anywhere; }
+
+/* v5.3.2: explain and request browser microphone permission from a user gesture. */
+.mic-permission-backdrop{position:fixed;inset:0;z-index:220;display:grid;place-items:center;padding:16px;background:rgba(18,14,31,.72);backdrop-filter:blur(5px)}
+.mic-permission-modal{width:min(100%,430px);max-height:90dvh;overflow:auto;background:#fff;color:#211c35;border-radius:20px;padding:24px;box-shadow:0 24px 90px #100b2055}
+.mic-permission-icon{font-size:38px}.mic-permission-modal h3{font-size:21px;margin:8px 0}.mic-permission-modal p,.mic-permission-modal li{font-size:13px;line-height:1.55;color:#625b70}.mic-permission-modal ol{padding-left:21px}.mic-permission-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.mic-permission-actions button{min-width:105px}
