@@ -97,36 +97,3 @@
   .result-modal{width:min(100%,440px);max-height:calc(100dvh - 20px);overflow-y:auto;padding-bottom:calc(16px + env(safe-area-inset-bottom));}
   .result-actions{position:sticky;bottom:0;padding:10px 0 2px;background:#fff;}
 }
-
-/* v5 requested gameplay improvements */
-.round-select-label{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;font-weight:700;margin-top:12px}
-.round-select-label select,.mobile-start-bar select{border:1px solid #e5e1ed;border-radius:8px;padding:7px;background:#fff;font:inherit}
-.mobile-start-bar{display:none}
-.tools button:disabled{opacity:.35}
-@media(max-width:620px){
-  .mobile-start-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #ebe7f3;border-radius:12px;padding:10px;margin:0 0 9px}
-  .mobile-start-bar label{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:800}
-  .mobile-start-bar button{flex:1;padding:11px}
-  .players .desktop-start-controls{display:none}
-}
-
-
-/* v5.2: celebratory correct-guess feedback and accessible result layout */
-.msg.correct{animation:correct-pop .55s ease-out;border:1px solid #b8ebc8;background:linear-gradient(110deg,#e7ffef,#f5fff8);color:#176b38;font-weight:800;box-shadow:0 4px 16px #26a65b20}
-@keyframes correct-pop{0%{transform:scale(.94);opacity:.5}55%{transform:scale(1.035)}100%{transform:scale(1);opacity:1}}
-.toast{animation:toast-enter .25s ease-out}
-@keyframes toast-enter{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
-.result-list li{animation:result-row-in .3s ease both}
-.result-list li:nth-child(2){animation-delay:.04s}.result-list li:nth-child(3){animation-delay:.08s}.result-list li:nth-child(4){animation-delay:.12s}
-@keyframes result-row-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
-
-.voice-panel{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0;padding:12px 14px;background:#fff;border:1px solid #e8e3f2;border-radius:14px;box-shadow:0 4px 14px rgba(32,26,54,.05)}
-.voice-panel strong{margin-right:auto;color:#201a36}.voice-panel .muted{font-size:12px;color:#746d83}
-@media(max-width:700px){.voice-panel{position:relative;gap:8px;padding:10px}.voice-panel button{font-size:12px;padding:9px 11px}.voice-panel strong{width:100%;margin:0}}
-
-.voice-error { flex-basis: 100%; width: 100%; margin: 6px 0 0; padding: 10px 12px; border-radius: 8px; line-height: 1.45; overflow-wrap: anywhere; }
-
-/* v5.3.2: explain and request browser microphone permission from a user gesture. */
-.mic-permission-backdrop{position:fixed;inset:0;z-index:220;display:grid;place-items:center;padding:16px;background:rgba(18,14,31,.72);backdrop-filter:blur(5px)}
-.mic-permission-modal{width:min(100%,430px);max-height:90dvh;overflow:auto;background:#fff;color:#211c35;border-radius:20px;padding:24px;box-shadow:0 24px 90px #100b2055}
-.mic-permission-icon{font-size:38px}.mic-permission-modal h3{font-size:21px;margin:8px 0}.mic-permission-modal p,.mic-permission-modal li{font-size:13px;line-height:1.55;color:#625b70}.mic-permission-modal ol{padding-left:21px}.mic-permission-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.mic-permission-actions button{min-width:105px}
